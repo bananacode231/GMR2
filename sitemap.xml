@@ -1,9 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://bananacode231.github.io/GMR/</loc>
-    <lastmod>2024-10-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://bananacode231.github.io/GMR2/</loc>
+        <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Bitcoin Philanthropy Section -->
+    <url>
+        <loc>https://bananacode231.github.io/GMR2/#bitcoin-philanthropy</loc>
+        <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- High Net Worth Giving -->
+    <url>
+        <loc>https://bananacode231.github.io/GMR2/#high-net-worth-giving</loc>
+        <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Bitcoin Donation -->
+    <url>
+        <loc>https://bananacode231.github.io/GMR2/#bitcoin-donation</loc>
+        <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Legacy Planning -->
+    <url>
+        <loc>https://bananacode231.github.io/GMR2/#legacy-planning</loc>
+        <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Crypto Testimonials -->
+    <url>
+        <loc>https://bananacode231.github.io/GMR2/#crypto-testimonials</loc>
+        <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Wealth Gap -->
+    <url>
+        <loc>https://bananacode231.github.io/GMR2/#wealth-gap</loc>
+        <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Dream Goals -->
+    <url>
+        <loc>https://bananacode231.github.io/GMR2/#dream-goals</loc>
+        <lastmod>2024-01-01T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+
 </urlset>

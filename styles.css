@@ -162,6 +162,61 @@ main {
 }
 
 
+/* Bitcoin Legacy Planning */
+.legacy-planning {
+    margin-bottom: 50px;
+}
+
+.legacy-planning h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.legacy-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.legacy-card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.legacy-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.legacy-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.legacy-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.legacy-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
 /* Crypto Billionaire Testimonials */
 .crypto-testimonials {
     margin-bottom: 50px;
@@ -599,6 +654,10 @@ main {
     animation: fadeInUp 0.8s ease-out;
 }
 
+.legacy-planning {
+    animation: fadeInUp 0.8s ease-out 0.02s both;
+}
+
 .crypto-testimonials {
     animation: fadeInUp 0.8s ease-out 0.05s both;
 }
@@ -627,6 +686,11 @@ main {
 
 .reason:hover .reason-icon {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.legacy-card:hover .legacy-icon {
+    transform: scale(1.1) rotate(-3deg);
     transition: transform 0.3s ease;
 }
 

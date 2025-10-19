@@ -1,8 +1,23 @@
 User-agent: *
 Allow: /
+Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://bananacode231.github.io/GMR/sitemap.xml
+Sitemap: https://bananacode231.github.io/GMR2/sitemap.xml
 
-# Crawl-delay for respectful crawling
-Crawl-delay: 1
+# Specific directives for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+# Block common spam bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
