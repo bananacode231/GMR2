@@ -159,34 +159,18 @@ function startEliteCountdown() {
     document.head.appendChild(style);
 }
 
-// Dynamic Stats Animation
-function animateStats() {
-    const participantsElement = document.getElementById('totalParticipants');
-    const btcElement = document.getElementById('totalBTC');
-    const dreamsElement = document.getElementById('dreamsHelped');
-
-    // Animate numbers counting up
-    function animateNumber(element, target, suffix = '') {
-        const start = 0;
-        const increment = target / 50; // 50 steps
-        let current = start;
-
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) {
-                current = target;
-                clearInterval(timer);
-            }
-            element.textContent = Math.floor(current) + suffix;
-        }, 50);
-    }
-
-    // Start animations after a short delay
+// Simple animation for donation encouragement
+function showEncouragement() {
+    // Just add a subtle animation to the copy button
     setTimeout(() => {
-        animateNumber(participantsElement, 47);
-        animateNumber(btcElement, 12.8, ' BTC');
-        animateNumber(dreamsElement, 156);
-    }, 1000);
+        const button = document.querySelector('.donate-btn');
+        if (button) {
+            button.style.transform = 'scale(1.02)';
+            setTimeout(() => {
+                button.style.transform = 'scale(1)';
+            }, 200);
+        }
+    }, 2000);
 }
 
 // Social Sharing for Viral Growth
@@ -303,7 +287,7 @@ function generateEliteQRCode() {
 document.addEventListener('DOMContentLoaded', function() {
     generateEliteQRCode();
     startEliteCountdown();
-    animateStats();
+    showEncouragement();
     initSocialSharing();
 
     // Add hover effects to options

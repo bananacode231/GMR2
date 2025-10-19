@@ -314,31 +314,30 @@ main {
     box-shadow: 0 12px 35px rgba(76, 175, 80, 0.4);
 }
 
-.impact-stats {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-}
-
-.stat {
+.impact-note {
+    margin-top: 30px;
     text-align: center;
+    padding: 25px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 15px;
+    border: 2px solid rgba(102, 126, 234, 0.2);
 }
 
-.stat-number {
-    display: block;
-    font-size: 2em;
-    font-weight: 700;
-    color: #667eea;
-    margin-bottom: 5px;
+.impact-note p {
+    margin: 10px 0;
+    font-size: 1.1em;
+    color: #2c3e50;
 }
 
-.stat-label {
-    font-size: 0.9em;
+.impact-note p:first-child {
+    font-style: italic;
     color: #666;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+}
+
+.impact-note p:last-child {
+    font-weight: 600;
+    color: #667eea;
+    font-size: 1.2em;
 }
 
 /* Helping Reasons */
@@ -428,23 +427,13 @@ main {
 
 .thanks-footer p {
     font-size: 1.2em;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
     opacity: 0.9;
 }
 
-.helper-types {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.helper-type {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-size: 0.9em;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+.thanks-footer p:last-child {
+    font-size: 1em;
+    opacity: 0.8;
 }
 
 /* Donation Footer */
