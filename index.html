@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Me Rich - Bitcoin Donations</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Get Me Rich</h1>
+            <p class="subtitle">Just seeing if anyone rich wants to change my life</p>
+        </header>
+
+        <main>
+            <div class="wallet-section">
+                <h2>My Bitcoin Wallet</h2>
+                <div class="wallet-address" id="walletAddress">
+                    17h6dvbnyRWxM5ML4Cn2iHKh12GEhXrzdt
+                </div>
+                <button onclick="copyToClipboard()" class="copy-btn">Copy Address</button>
+            </div>
+
+            <div class="message">
+                <p>If you're feeling generous and want to help someone out, feel free to send some BTC my way!</p>
+                <p>Every little bit helps make dreams come true! 🚀</p>
+            </div>
+
+            <div class="qr-code">
+                <p>Scan QR Code:</p>
+                <div id="qrCodeContainer"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Thanks for visiting! Made with ❤️</p>
+        </footer>
+    </div>
+
+    <!-- QR Code Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
