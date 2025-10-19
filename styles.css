@@ -279,6 +279,255 @@ main {
     opacity: 0.8;
 }
 
+/* The Power of Bitcoin */
+.bitcoin-power-section {
+    margin-bottom: 50px;
+}
+
+.bitcoin-power-section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.bitcoin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.bitcoin-feature {
+    background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12),
+        0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.bitcoin-feature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg,
+        rgba(243, 156, 18, 0.05),
+        rgba(230, 126, 34, 0.05),
+        rgba(243, 156, 18, 0.05)
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 20px;
+}
+
+.bitcoin-feature:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.18),
+        0 10px 25px rgba(0, 0, 0, 0.12);
+    border-color: rgba(243, 156, 18, 0.3);
+}
+
+.bitcoin-feature:hover::before {
+    opacity: 1;
+}
+
+.feature-icon {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.bitcoin-feature h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.bitcoin-feature p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+/* Psychological Impact */
+.impact-section {
+    margin-bottom: 50px;
+}
+
+.impact-section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.impact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.impact-card {
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    padding: 35px 30px;
+    border-radius: 20px;
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.12),
+        0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.impact-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(255, 119, 198, 0.05));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 20px;
+}
+
+.impact-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.18),
+        0 10px 25px rgba(0, 0, 0, 0.12);
+    border-color: rgba(102, 126, 234, 0.3);
+}
+
+.impact-card:hover::before {
+    opacity: 1;
+}
+
+.impact-icon {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    display: block;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.impact-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.impact-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
+/* What Happens After */
+.aftermath-section {
+    margin-bottom: 50px;
+}
+
+.aftermath-section h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.aftermath-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.aftermath-timeline::before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, #667eea, #764ba2, #f093fb);
+}
+
+.timeline-item {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    padding-left: 100px;
+}
+
+.timeline-number {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 800;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    z-index: 2;
+}
+
+.timeline-content {
+    background: linear-gradient(135deg, #ffffff 0%, #fafafa 100%);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.12),
+        0 5px 15px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    position: relative;
+}
+
+.timeline-content::before {
+    content: '';
+    position: absolute;
+    left: -15px;
+    top: 25px;
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #ffffff;
+}
+
+.timeline-content h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    font-weight: 700;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
 /* Dream Goals */
 .dream-goals {
     margin-bottom: 50px;
@@ -700,8 +949,20 @@ main {
     animation: fadeInUp 0.8s ease-out;
 }
 
+.bitcoin-power-section {
+    animation: fadeInUp 0.8s ease-out 0.05s both;
+}
+
+.impact-section {
+    animation: fadeInUp 0.8s ease-out 0.1s both;
+}
+
+.aftermath-section {
+    animation: slideInLeft 0.8s ease-out 0.2s both;
+}
+
 .dream-goals {
-    animation: fadeInUp 0.8s ease-out 0.2s both;
+    animation: fadeInUp 0.8s ease-out 0.3s both;
 }
 
 .donation-section {
@@ -720,6 +981,21 @@ main {
 
 .reason:hover .reason-icon {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.impact-card:hover .impact-icon {
+    transform: scale(1.1) rotate(-5deg);
+    transition: transform 0.3s ease;
+}
+
+.timeline-content:hover {
+    transform: translateX(10px);
+    transition: transform 0.3s ease;
+}
+
+.bitcoin-feature:hover .feature-icon {
+    transform: scale(1.1) rotate(5deg);
     transition: transform 0.3s ease;
 }
 
