@@ -185,12 +185,12 @@ main {
     opacity: 0.8;
 }
 
-/* Helping Options */
-.helping-options {
+/* Dream Goals */
+.dream-goals {
     margin-bottom: 50px;
 }
 
-.helping-options h2 {
+.dream-goals h2 {
     text-align: center;
     font-size: 2.2em;
     margin-bottom: 40px;
@@ -509,7 +509,7 @@ main {
     animation: fadeInUp 0.8s ease-out;
 }
 
-.helping-options {
+.dream-goals {
     animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 

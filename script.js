@@ -290,9 +290,9 @@ document.addEventListener('DOMContentLoaded', function() {
     showEncouragement();
     initSocialSharing();
 
-    // Add hover effects to options
-    const options = document.querySelectorAll('.option');
-    options.forEach(option => {
+    // Add hover effects to dream goals
+    const dreamGoals = document.querySelectorAll('.option');
+    dreamGoals.forEach(option => {
         option.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-5px) scale(1.02)';
             this.style.boxShadow = '0 15px 35px rgba(0,0,0,0.15)';
