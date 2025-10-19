@@ -1,4 +1,7 @@
-/* Get Me Rich - Bitcoin Donation Website */
+/* The Billionaire's Dare - Elite Wealth Acceleration Website */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,200 +9,508 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #1a1a1a;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    background-attachment: fixed;
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 16px;
 }
 
 .container {
-    background: white;
-    max-width: 600px;
-    width: 90%;
-    margin: 20px;
-    border-radius: 15px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    max-width: 1200px;
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.25),
+        0 0 0 1px rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    position: relative;
+}
+
+/* Elite Header Styling */
+.elite-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-align: center;
+    padding: 50px 30px;
+    position: relative;
     overflow: hidden;
 }
 
-header {
+.elite-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.02)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.elite-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.elite-header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.5em, 5vw, 4em);
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+}
+
+.elite-subtitle {
+    font-size: 1.3em;
+    opacity: 0.9;
+    font-weight: 400;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.countdown-timer {
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 15px 25px;
+    display: inline-block;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    z-index: 2;
+}
+
+.timer-label {
+    font-size: 14px;
+    opacity: 0.8;
+    margin-right: 10px;
+}
+
+.timer {
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffd700;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+}
+
+/* Main Content */
+main {
+    padding: 50px 40px;
+}
+
+/* Elite Testimonials */
+.elite-testimonials {
+    margin-bottom: 50px;
+}
+
+.elite-testimonials h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    position: relative;
+}
+
+.elite-testimonials h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 2px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.testimonial {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-amount {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #f39c12;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(243, 156, 18, 0.3);
+}
+
+.testimonial p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.testimonial-name {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* Elite Tiers */
+.elite-tiers {
+    margin-bottom: 50px;
+}
+
+.elite-tiers h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.tier-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.tier {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tier::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.bronze-tier::before {
+    background: linear-gradient(90deg, #cd7f32, #b8860b);
+}
+
+.silver-tier::before {
+    background: linear-gradient(90deg, #c0c0c0, #a8a8a8);
+}
+
+.gold-tier::before {
+    background: linear-gradient(90deg, #ffd700, #ff8c00);
+}
+
+.tier-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
     background: linear-gradient(135deg, #ff6b6b, #ee5a52);
     color: white;
+    padding: 5px 12px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.tier-header {
     text-align: center;
-    padding: 40px 20px;
+    margin-bottom: 25px;
 }
 
-header h1 {
-    font-size: 3em;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.subtitle {
-    font-size: 1.2em;
-    opacity: 0.9;
-    font-weight: 300;
-}
-
-main {
-    padding: 40px 30px;
-}
-
-.wallet-section {
-    background: #f8f9fa;
-    border-radius: 10px;
-    padding: 30px;
-    margin-bottom: 30px;
-    text-align: center;
-    border: 2px solid #e9ecef;
-}
-
-.wallet-section h2 {
+.tier-name {
+    display: block;
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 8px;
     color: #2c3e50;
-    margin-bottom: 20px;
-    font-size: 1.8em;
 }
 
-.wallet-address {
+.tier-amount {
     font-family: 'Courier New', monospace;
     font-size: 1.1em;
-    font-weight: bold;
-    background: white;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    margin-bottom: 20px;
-    word-break: break-all;
-    color: #2c3e50;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #667eea;
+    font-weight: 600;
 }
 
-.copy-btn {
-    background: linear-gradient(135deg, #4CAF50, #45a049);
-    color: white;
-    border: none;
-    padding: 12px 30px;
-    font-size: 1em;
-    font-weight: bold;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
-}
-
-.copy-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
-}
-
-.copy-btn:active {
-    transform: translateY(0);
-}
-
-.message {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 1.1em;
-    color: #555;
-}
-
-.message p {
-    margin-bottom: 15px;
-}
-
-.message code {
-    background: #f1f1f1;
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-family: 'Courier New', monospace;
-}
-
-.features {
-    background: #f8f9fa;
-    border-radius: 10px;
-    padding: 25px;
-    margin-bottom: 30px;
-    border: 2px solid #e9ecef;
-}
-
-.features h3 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-size: 1.4em;
-    text-align: center;
-}
-
-.features ul {
+.tier-benefits {
     list-style: none;
     padding: 0;
 }
 
-.features li {
-    margin-bottom: 12px;
+.tier-benefits li {
+    padding: 8px 0;
     padding-left: 25px;
     position: relative;
     color: #555;
-    line-height: 1.5;
+    border-bottom: 1px solid #f0f0f0;
 }
 
-.features li::before {
-    content: "✓";
+.tier-benefits li:last-child {
+    border-bottom: none;
+}
+
+.tier-benefits li::before {
+    content: '✓';
     position: absolute;
     left: 0;
     color: #4CAF50;
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
-.qr-code {
+/* Elite Wallet Section */
+.elite-wallet-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 50px;
     text-align: center;
+}
+
+.elite-wallet-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.wallet-card {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    min-width: 300px;
+}
+
+.btc-logo {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #f39c12;
+}
+
+.wallet-address {
+    font-family: 'Courier New', monospace;
+    font-size: 1.2em;
+    font-weight: 600;
     background: #f8f9fa;
+    border: 2px solid #e9ecef;
     border-radius: 10px;
     padding: 20px;
-    border: 2px solid #e9ecef;
+    margin-bottom: 25px;
+    word-break: break-all;
+    color: #2c3e50;
+    letter-spacing: 0.5px;
 }
 
-.qr-code p {
+.elite-copy-btn {
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.elite-copy-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(76, 175, 80, 0.4);
+}
+
+.network-stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+    font-size: 2em;
+    font-weight: 700;
+    color: #667eea;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 0.9em;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Elite Advantages */
+.elite-advantages {
+    margin-bottom: 50px;
+}
+
+.elite-advantages h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.advantages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.advantage {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.advantage:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.advantage-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.advantage h3 {
+    font-size: 1.4em;
     margin-bottom: 15px;
     color: #2c3e50;
-    font-weight: bold;
 }
 
-#qrCodeContainer {
-    display: inline-block;
-    padding: 10px;
+.advantage p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Elite QR Section */
+.elite-qr-section {
     background: white;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-#qrCodeContainer canvas {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+.elite-qr-section h3 {
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #2c3e50;
 }
 
-footer {
-    background: #2c3e50;
+.qr-code-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.qr-instruction {
+    margin-top: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Social Proof Footer */
+.social-proof-footer {
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 40px;
+    margin-bottom: 0;
+}
+
+.social-proof-footer p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.participation-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.participant-logo {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 0.9em;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Elite Footer */
+.elite-footer {
+    background: #1a1a1a;
+    color: #888;
+    text-align: center;
+    padding: 30px;
     font-size: 0.9em;
 }
 
-/* Responsive design */
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2.2em;
-    }
+.footer-note {
+    margin-top: 10px;
+    font-style: italic;
+    opacity: 0.7;
+}
 
+/* Responsive Design */
+@media (max-width: 768px) {
     .container {
         margin: 10px;
         width: calc(100% - 20px);
@@ -209,17 +520,27 @@ footer {
         padding: 30px 20px;
     }
 
-    .wallet-section {
-        padding: 20px;
+    .elite-header {
+        padding: 30px 20px;
     }
 
-    .wallet-address {
-        font-size: 0.9em;
-        padding: 12px;
+    .testimonial-grid,
+    .tier-grid,
+    .advantages-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .network-stats {
+        gap: 20px;
+    }
+
+    .participation-logos {
+        gap: 15px;
     }
 }
 
-/* Animation for loading */
+/* Loading Animations */
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -231,20 +552,57 @@ footer {
     }
 }
 
-.wallet-section,
-.message,
-.qr-code {
-    animation: fadeInUp 0.6s ease-out;
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
-.wallet-section {
-    animation-delay: 0.1s;
+.elite-testimonials {
+    animation: fadeInUp 0.8s ease-out;
 }
 
-.message {
-    animation-delay: 0.2s;
+.elite-tiers {
+    animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
-.qr-code {
-    animation-delay: 0.3s;
+.elite-wallet-section {
+    animation: slideInLeft 0.8s ease-out 0.4s both;
+}
+
+.elite-advantages {
+    animation: fadeInUp 0.8s ease-out 0.6s both;
+}
+
+/* Hover Effects */
+.tier:hover .tier-name {
+    color: #667eea;
+}
+
+.advantage:hover .advantage-icon {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a6fd8, #6a4190);
 }
