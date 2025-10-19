@@ -233,15 +233,15 @@ function initSocialSharing() {
 
 function shareOnTwitter() {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("Bitcoin made me wealthy. Now I use it to help others achieve dreams. The smartest investment is in human potential. $BTC philanthropy opportunity 🧠💰 #Bitcoin #CryptoPhilanthropy");
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}&hashtags=Bitcoin,CryptoPhilanthropy,WealthDistribution`;
+    const text = encodeURIComponent("Have you ever wanted to help someone but didn't want the fame? Bitcoin enables completely anonymous giving. Help someone own a home - no recognition needed. 🏠💝 #BitcoinPhilanthropy #AnonymousGiving");
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}&hashtags=BitcoinPhilanthropy,AnonymousGiving,CryptoCharity`;
     window.open(twitterUrl, '_blank', 'width=600,height=400');
 }
 
 function shareOnLinkedIn() {
     const url = encodeURIComponent(window.location.href);
-    const title = encodeURIComponent("Bitcoin Billionaires: The Smartest Investment is in Human Potential");
-    const summary = encodeURIComponent("While crypto creates immense wealth for a few, billions struggle for opportunities. Bitcoin philanthropy platform connecting high-net-worth crypto holders with ambitious individuals. Help someone achieve house ownership or cybertruck dreams through BTC donations.");
+    const title = encodeURIComponent("Anonymous Bitcoin Giving: Help Others Without the Fame");
+    const summary = encodeURIComponent("Perfect for those who've wanted to help but didn't want recognition. Bitcoin enables completely anonymous philanthropy - help someone achieve home ownership with no names, no publicity, just the satisfaction of making a difference.");
     const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     window.open(linkedInUrl, '_blank', 'width=600,height=400');
 }

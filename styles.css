@@ -162,6 +162,61 @@ main {
 }
 
 
+/* Anonymous Giving */
+.anonymous-giving {
+    margin-bottom: 50px;
+}
+
+.anonymous-giving h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.anonymous-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.anonymous-card {
+    background: white;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.anonymous-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.anonymous-icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.anonymous-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #1a1a1a;
+    font-weight: 700;
+}
+
+.anonymous-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 1.05em;
+}
+
 /* Bitcoin Legacy Planning */
 .legacy-planning {
     margin-bottom: 50px;
@@ -659,6 +714,10 @@ main {
     animation: fadeInUp 0.8s ease-out 0.02s both;
 }
 
+.anonymous-giving {
+    animation: fadeInUp 0.8s ease-out 0.03s both;
+}
+
 .crypto-testimonials {
     animation: fadeInUp 0.8s ease-out 0.05s both;
 }
@@ -692,6 +751,11 @@ main {
 
 .legacy-card:hover .legacy-icon {
     transform: scale(1.1) rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.anonymous-card:hover .anonymous-icon {
+    transform: scale(1.1) rotate(3deg);
     transition: transform 0.3s ease;
 }
 
