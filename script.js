@@ -233,15 +233,15 @@ function initSocialSharing() {
 
 function shareOnTwitter() {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("Just found a simple way generous people can help make dreams come true with Bitcoin. The Billionaire's Dare - every little bit helps! ☕💭");
+    const text = encodeURIComponent("You have more money than you'll ever need. You can't take it with you when you're gone. Why not help someone achieve their dreams? The Billionaire's Dare 💰✨");
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
     window.open(twitterUrl, '_blank', 'width=600,height=400');
 }
 
 function shareOnLinkedIn() {
     const url = encodeURIComponent(window.location.href);
-    const title = encodeURIComponent("The Billionaire's Dare - Help Make Dreams Come True");
-    const summary = encodeURIComponent("A simple Bitcoin donation page where generous people can help ambitious individuals chase their dreams. No strings attached.");
+    const title = encodeURIComponent("The Billionaire's Dare - You Can't Take It With You");
+    const summary = encodeURIComponent("A psychological approach to giving: You have more money than you'll ever need and can't take it with you when you're gone. Why not use some Bitcoin to help someone achieve their dreams while you're here?");
     const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     window.open(linkedInUrl, '_blank', 'width=600,height=400');
 }
