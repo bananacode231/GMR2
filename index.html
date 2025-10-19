@@ -3,7 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Get Me Rich - Bitcoin Donations</title>
+
+    <!-- SEO Meta Tags -->
+    <title>Get Me Rich - Bitcoin Donations | Help Change My Life</title>
+    <meta name="description" content="Donate Bitcoin and help change my life! Simple Bitcoin donation page with QR code. Every little bit helps make dreams come true. BTC Address: 17h6dvbnyRWxM5ML4Cn2iHKh12GEhXrzdt">
+    <meta name="keywords" content="bitcoin donation, donate bitcoin, bitcoin wallet, bitcoin address, help change life, bitcoin QR code, cryptocurrency donation, BTC donation">
+    <meta name="author" content="GetMeRich">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bananacode231.github.io/GMR/">
+    <meta property="og:title" content="Get Me Rich - Bitcoin Donations | Help Change My Life">
+    <meta property="og:description" content="Donate Bitcoin and help change my life! Simple Bitcoin donation page with QR code. Every little bit helps make dreams come true.">
+    <meta property="og:image" content="https://bananacode231.github.io/GMR/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://bananacode231.github.io/GMR/">
+    <meta property="twitter:title" content="Get Me Rich - Bitcoin Donations | Help Change My Life">
+    <meta property="twitter:description" content="Donate Bitcoin and help change my life! Simple Bitcoin donation page with QR code. Every little bit helps make dreams come true.">
+    <meta property="twitter:image" content="https://bananacode231.github.io/GMR/og-image.png">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://bananacode231.github.io/GMR/">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,6 +53,19 @@
             <div class="message">
                 <p>If you're feeling generous and want to help someone out, feel free to send some BTC my way!</p>
                 <p>Every little bit helps make dreams come true! 🚀</p>
+                <p><strong>Bitcoin Address:</strong> <code>17h6dvbnyRWxM5ML4Cn2iHKh12GEhXrzdt</code></p>
+                <p>Your donation could be the spark that changes everything. Whether it's 0.001 BTC or 1 BTC, every satoshi counts!</p>
+            </div>
+
+            <div class="features">
+                <h3>Why Donate Bitcoin?</h3>
+                <ul>
+                    <li><strong>Fast:</strong> Transactions confirm in minutes, not days</li>
+                    <li><strong>Global:</strong> Send from anywhere in the world, anytime</li>
+                    <li><strong>Low Fees:</strong> Much cheaper than traditional banking</li>
+                    <li><strong>Private:</strong> No personal information required</li>
+                    <li><strong>Borderless:</strong> No currency conversion hassles</li>
+                </ul>
             </div>
 
             <div class="qr-code">
@@ -41,5 +82,26 @@
     <!-- QR Code Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
     <script src="script.js"></script>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Get Me Rich - Bitcoin Donations",
+        "description": "Donate Bitcoin and help change my life! Simple Bitcoin donation page with QR code. Every little bit helps make dreams come true.",
+        "url": "https://bananacode231.github.io/GMR/",
+        "potentialAction": {
+            "@type": "DonateAction",
+            "target": "https://bananacode231.github.io/GMR/",
+            "currency": "BTC"
+        },
+        "about": {
+            "@type": "Thing",
+            "name": "Bitcoin Donation",
+            "description": "Accepting Bitcoin donations to help change my life"
+        }
+    }
+    </script>
 </body>
 </html>

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://bananacode231.github.io/GMR/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
