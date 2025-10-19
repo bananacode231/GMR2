@@ -162,6 +162,119 @@ main {
 }
 
 
+/* Crypto Billionaire Testimonials */
+.crypto-testimonials {
+    margin-bottom: 50px;
+}
+
+.crypto-testimonials h2 {
+    text-align: center;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.crypto-testimonials .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.crypto-testimonials .testimonial {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-left: 4px solid #f39c12;
+    transition: all 0.3s ease;
+}
+
+.crypto-testimonials .testimonial:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.crypto-testimonials .testimonial-amount {
+    font-family: 'Courier New', monospace;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #f39c12;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(243, 156, 18, 0.3);
+}
+
+.crypto-testimonials .testimonial p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.crypto-testimonials .testimonial-name {
+    color: #2c3e50;
+    font-weight: 600;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+/* The Crypto Wealth Gap */
+.wealth-gap-section {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.wealth-gap-section h2 {
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.wealth-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.stat-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.stat-number {
+    font-size: 2.5em;
+    font-weight: 800;
+    color: #f39c12;
+    margin-bottom: 10px;
+    text-shadow: 0 2px 4px rgba(243, 156, 18, 0.3);
+}
+
+.stat-label {
+    font-size: 1.1em;
+    color: #666;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.wealth-insight {
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+    font-style: italic;
+}
+
 /* Dream Goals */
 .dream-goals {
     margin-bottom: 50px;
@@ -486,8 +599,16 @@ main {
     animation: fadeInUp 0.8s ease-out;
 }
 
+.crypto-testimonials {
+    animation: fadeInUp 0.8s ease-out 0.05s both;
+}
+
+.wealth-gap-section {
+    animation: slideInLeft 0.8s ease-out 0.1s both;
+}
+
 .dream-goals {
-    animation: fadeInUp 0.8s ease-out 0.1s both;
+    animation: fadeInUp 0.8s ease-out 0.15s both;
 }
 
 .donation-section {

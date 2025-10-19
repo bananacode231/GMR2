@@ -233,15 +233,15 @@ function initSocialSharing() {
 
 function shareOnTwitter() {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("You have more money than you'll ever need. You can't take it with you when you're gone. Why not help someone achieve their dreams? The Billionaire's Dare 💰✨");
-    const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
+    const text = encodeURIComponent("Bitcoin made me wealthy. Now I use it to help others achieve dreams. The smartest investment is in human potential. $BTC philanthropy opportunity 🧠💰 #Bitcoin #CryptoPhilanthropy");
+    const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}&hashtags=Bitcoin,CryptoPhilanthropy,WealthDistribution`;
     window.open(twitterUrl, '_blank', 'width=600,height=400');
 }
 
 function shareOnLinkedIn() {
     const url = encodeURIComponent(window.location.href);
-    const title = encodeURIComponent("The Billionaire's Dare - You Can't Take It With You");
-    const summary = encodeURIComponent("A psychological approach to giving: You have more money than you'll ever need and can't take it with you when you're gone. Why not use some Bitcoin to help someone achieve their dreams while you're here?");
+    const title = encodeURIComponent("Bitcoin Billionaires: The Smartest Investment is in Human Potential");
+    const summary = encodeURIComponent("While crypto creates immense wealth for a few, billions struggle for opportunities. Bitcoin philanthropy platform connecting high-net-worth crypto holders with ambitious individuals. Help someone achieve house ownership or cybertruck dreams through BTC donations.");
     const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     window.open(linkedInUrl, '_blank', 'width=600,height=400');
 }
