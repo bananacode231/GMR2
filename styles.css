@@ -344,9 +344,10 @@ main {
 
 .options-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 30px auto 0;
     gap: 25px;
-    margin-top: 30px;
 }
 
 .option {
