@@ -163,7 +163,7 @@ function startEliteCountdown() {
 function animateStats() {
     const participantsElement = document.getElementById('totalParticipants');
     const btcElement = document.getElementById('totalBTC');
-    const roiElement = document.getElementById('avgROI');
+    const dreamsElement = document.getElementById('dreamsHelped');
 
     // Animate numbers counting up
     function animateNumber(element, target, suffix = '') {
@@ -185,7 +185,7 @@ function animateStats() {
     setTimeout(() => {
         animateNumber(participantsElement, 47);
         animateNumber(btcElement, 12.8, ' BTC');
-        animateNumber(roiElement, 340, '%');
+        animateNumber(dreamsElement, 156);
     }, 1000);
 }
 
@@ -249,15 +249,15 @@ function initSocialSharing() {
 
 function shareOnTwitter() {
     const url = encodeURIComponent(window.location.href);
-    const text = encodeURIComponent("Just discovered The Billionaire's Dare - an elite wealth acceleration experiment. Where entrepreneurs invest in human potential with Bitcoin. 🧠💰");
+    const text = encodeURIComponent("Just found a simple way generous people can help make dreams come true with Bitcoin. The Billionaire's Dare - every little bit helps! ☕💭");
     const twitterUrl = `https://twitter.com/intent/tweet?text=${text}&url=${url}`;
     window.open(twitterUrl, '_blank', 'width=600,height=400');
 }
 
 function shareOnLinkedIn() {
     const url = encodeURIComponent(window.location.href);
-    const title = encodeURIComponent("The Billionaire's Dare - Elite Wealth Acceleration Experiment");
-    const summary = encodeURIComponent("An exclusive network where elite entrepreneurs participate in Bitcoin-powered wealth acceleration experiments.");
+    const title = encodeURIComponent("The Billionaire's Dare - Help Make Dreams Come True");
+    const summary = encodeURIComponent("A simple Bitcoin donation page where generous people can help ambitious individuals chase their dreams. No strings attached.");
     const linkedInUrl = `https://www.linkedin.com/sharing/share-offsite/?url=${url}`;
     window.open(linkedInUrl, '_blank', 'width=600,height=400');
 }
@@ -306,22 +306,22 @@ document.addEventListener('DOMContentLoaded', function() {
     animateStats();
     initSocialSharing();
 
-    // Add hover effects to tiers
-    const tiers = document.querySelectorAll('.tier');
-    tiers.forEach(tier => {
-        tier.addEventListener('mouseenter', function() {
+    // Add hover effects to options
+    const options = document.querySelectorAll('.option');
+    options.forEach(option => {
+        option.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-5px) scale(1.02)';
             this.style.boxShadow = '0 15px 35px rgba(0,0,0,0.15)';
         });
 
-        tier.addEventListener('mouseleave', function() {
+        option.addEventListener('mouseleave', function() {
             this.style.transform = 'translateY(0) scale(1)';
             this.style.boxShadow = '';
         });
     });
 
     // Add click tracking for analytics
-    document.querySelector('.elite-copy-btn').addEventListener('click', function() {
-        console.log('Elite participant engaged with Bitcoin address');
+    document.querySelector('.donate-btn').addEventListener('click', function() {
+        console.log('Generous person engaged with Bitcoin address');
     });
 });

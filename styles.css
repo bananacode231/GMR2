@@ -116,12 +116,12 @@ main {
     padding: 50px 40px;
 }
 
-/* Elite Testimonials */
-.elite-testimonials {
+/* Personal Stories */
+.personal-stories {
     margin-bottom: 50px;
 }
 
-.elite-testimonials h2 {
+.personal-stories h2 {
     text-align: center;
     font-size: 2.2em;
     margin-bottom: 40px;
@@ -129,7 +129,7 @@ main {
     position: relative;
 }
 
-.elite-testimonials h2::after {
+.personal-stories h2::after {
     content: '';
     position: absolute;
     bottom: -10px;
@@ -141,70 +141,70 @@ main {
     border-radius: 2px;
 }
 
-.testimonial-grid {
+.story-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
 
-.testimonial {
+.story {
     background: white;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #4CAF50;
     transition: all 0.3s ease;
 }
 
-.testimonial:hover {
+.story:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-.testimonial-amount {
+.story-highlight {
     font-family: 'Courier New', monospace;
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 700;
-    color: #f39c12;
+    color: #4CAF50;
     margin-bottom: 15px;
-    text-shadow: 0 2px 4px rgba(243, 156, 18, 0.3);
+    text-shadow: 0 2px 4px rgba(76, 175, 80, 0.3);
 }
 
-.testimonial p {
+.story p {
     color: #555;
     line-height: 1.7;
     margin-bottom: 20px;
     font-style: italic;
 }
 
-.testimonial-name {
+.story-credit {
     color: #2c3e50;
     font-weight: 600;
     font-size: 0.9em;
     opacity: 0.8;
 }
 
-/* Elite Tiers */
-.elite-tiers {
+/* Helping Options */
+.helping-options {
     margin-bottom: 50px;
 }
 
-.elite-tiers h2 {
+.helping-options h2 {
     text-align: center;
     font-size: 2.2em;
     margin-bottom: 40px;
     color: #2c3e50;
 }
 
-.tier-grid {
+.options-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     margin-top: 30px;
 }
 
-.tier {
+.option {
     background: white;
     border-radius: 15px;
     padding: 30px;
@@ -212,92 +212,45 @@ main {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-}
-
-.tier::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #667eea, #764ba2);
-}
-
-.bronze-tier::before {
-    background: linear-gradient(90deg, #cd7f32, #b8860b);
-}
-
-.silver-tier::before {
-    background: linear-gradient(90deg, #c0c0c0, #a8a8a8);
-}
-
-.gold-tier::before {
-    background: linear-gradient(90deg, #ffd700, #ff8c00);
-}
-
-.tier-badge {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: linear-gradient(135deg, #ff6b6b, #ee5a52);
-    color: white;
-    padding: 5px 12px;
-    border-radius: 12px;
-    font-size: 11px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-.tier-header {
     text-align: center;
-    margin-bottom: 25px;
 }
 
-.tier-name {
+.option:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.option-emoji {
+    font-size: 3em;
+    margin-bottom: 20px;
     display: block;
-    font-size: 1.3em;
-    font-weight: 700;
-    margin-bottom: 8px;
+}
+
+.option h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
     color: #2c3e50;
 }
 
-.tier-amount {
+.option p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.btc-amount {
     font-family: 'Courier New', monospace;
-    font-size: 1.1em;
-    color: #667eea;
+    font-size: 1.2em;
+    color: #f39c12;
     font-weight: 600;
+    background: #f8f9fa;
+    padding: 8px 16px;
+    border-radius: 8px;
+    display: inline-block;
 }
 
-.tier-benefits {
-    list-style: none;
-    padding: 0;
-}
-
-.tier-benefits li {
-    padding: 8px 0;
-    padding-left: 25px;
-    position: relative;
-    color: #555;
-    border-bottom: 1px solid #f0f0f0;
-}
-
-.tier-benefits li:last-child {
-    border-bottom: none;
-}
-
-.tier-benefits li::before {
-    content: '✓';
-    position: absolute;
-    left: 0;
-    color: #4CAF50;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-/* Elite Wallet Section */
-.elite-wallet-section {
+/* Donation Section */
+.donation-section {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     border-radius: 20px;
     padding: 40px;
@@ -305,7 +258,7 @@ main {
     text-align: center;
 }
 
-.elite-wallet-section h2 {
+.donation-section h2 {
     font-size: 2em;
     margin-bottom: 30px;
     color: #2c3e50;
@@ -341,7 +294,7 @@ main {
     letter-spacing: 0.5px;
 }
 
-.elite-copy-btn {
+.donate-btn {
     background: linear-gradient(135deg, #4CAF50, #45a049);
     color: white;
     border: none;
@@ -356,12 +309,12 @@ main {
     letter-spacing: 0.5px;
 }
 
-.elite-copy-btn:hover {
+.donate-btn:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 35px rgba(76, 175, 80, 0.4);
 }
 
-.network-stats {
+.impact-stats {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -388,26 +341,26 @@ main {
     letter-spacing: 1px;
 }
 
-/* Elite Advantages */
-.elite-advantages {
+/* Helping Reasons */
+.helping-reasons {
     margin-bottom: 50px;
 }
 
-.elite-advantages h2 {
+.helping-reasons h2 {
     text-align: center;
     font-size: 2.2em;
     margin-bottom: 40px;
     color: #2c3e50;
 }
 
-.advantages-grid {
+.reasons-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
     margin-top: 30px;
 }
 
-.advantage {
+.reason {
     background: white;
     padding: 30px;
     border-radius: 15px;
@@ -416,29 +369,29 @@ main {
     transition: all 0.3s ease;
 }
 
-.advantage:hover {
+.reason:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
 }
 
-.advantage-icon {
+.reason-icon {
     font-size: 3em;
     margin-bottom: 20px;
 }
 
-.advantage h3 {
+.reason h3 {
     font-size: 1.4em;
     margin-bottom: 15px;
     color: #2c3e50;
 }
 
-.advantage p {
+.reason p {
     color: #666;
     line-height: 1.7;
 }
 
-/* Elite QR Section */
-.elite-qr-section {
+/* Donate QR Section */
+.donate-qr-section {
     background: white;
     border-radius: 20px;
     padding: 40px;
@@ -446,7 +399,7 @@ main {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.elite-qr-section h3 {
+.donate-qr-section h3 {
     text-align: center;
     font-size: 1.8em;
     margin-bottom: 30px;
@@ -464,8 +417,8 @@ main {
     font-style: italic;
 }
 
-/* Social Proof Footer */
-.social-proof-footer {
+/* Thanks Footer */
+.thanks-footer {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
     text-align: center;
@@ -473,20 +426,20 @@ main {
     margin-bottom: 0;
 }
 
-.social-proof-footer p {
+.thanks-footer p {
     font-size: 1.2em;
     margin-bottom: 25px;
     opacity: 0.9;
 }
 
-.participation-logos {
+.helper-types {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
 
-.participant-logo {
+.helper-type {
     background: rgba(255, 255, 255, 0.1);
     padding: 10px 20px;
     border-radius: 25px;
@@ -494,8 +447,8 @@ main {
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Elite Footer */
-.elite-footer {
+/* Donation Footer */
+.donation-footer {
     background: #1a1a1a;
     color: #888;
     text-align: center;
@@ -563,28 +516,29 @@ main {
     }
 }
 
-.elite-testimonials {
+.personal-stories {
     animation: fadeInUp 0.8s ease-out;
 }
 
-.elite-tiers {
+.helping-options {
     animation: fadeInUp 0.8s ease-out 0.2s both;
 }
 
-.elite-wallet-section {
+.donation-section {
     animation: slideInLeft 0.8s ease-out 0.4s both;
 }
 
-.elite-advantages {
+.helping-reasons {
     animation: fadeInUp 0.8s ease-out 0.6s both;
 }
 
 /* Hover Effects */
-.tier:hover .tier-name {
-    color: #667eea;
+.option:hover .option-emoji {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
-.advantage:hover .advantage-icon {
+.reason:hover .reason-icon {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Get Me Rich - Bitcoin Donations</title>
+        <description>Donate Bitcoin and help change my life! Simple Bitcoin donation page with QR code. Every little bit helps make dreams come true.</description>
+        <link>https://bananacode231.github.io/GMR/</link>
+        <atom:link href="https://bananacode231.github.io/GMR/rss.xml" rel="self" type="application/rss+xml"/>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 19 Oct 2024 12:00:00 GMT</lastBuildDate>
+        <ttl>1440</ttl>
+
+        <item>
+            <title>Get Me Rich - Bitcoin Donation Page</title>
+            <description>Donate Bitcoin and help change my life! My Bitcoin address is 17h6dvbnyRWxM5ML4Cn2iHKh12GEhXrzdt. Every little bit helps make dreams come true! Features include fast transactions, global accessibility, low fees, privacy, and borderless payments.</description>
+            <link>https://bananacode231.github.io/GMR/</link>
+            <guid>https://bananacode231.github.io/GMR/</guid>
+            <pubDate>Sun, 19 Oct 2024 12:00:00 GMT</pubDate>
+            <category>Bitcoin</category>
+            <category>Donations</category>
+            <category>Cryptocurrency</category>
+        </item>
+    </channel>
+</rss>
